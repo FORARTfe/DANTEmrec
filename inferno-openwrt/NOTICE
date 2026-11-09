@@ -1,0 +1,21 @@
+Inferno OpenWrt experimental source port
+Prepared: 2026-11-09
+
+This archive contains an OpenWrt packaging overlay, a replacement capture frontend,
+source transformation/preparation tools, tests, and documentation. It does not
+contain the complete Inferno/Statime source trees, vendored crates or binaries.
+
+Inferno is by Teodor Wozniak and contributors. The original capture frontend
+includes: Copyright (C) 2023-2025 Teodor Wozniak.
+Inferno offers GPL-3.0-or-later OR AGPL-3.0-or-later. This overlay uses the
+GPL-3.0-or-later option. New overlay code is GPL-3.0-or-later; see LICENSE.
+Original notices and licenses are retained in downloaded source snapshots.
+
+The required Statime fork and its dependencies have their own licenses, including
+Apache-2.0 OR MIT for Statime. Their notices are retained in the prepared sources.
+Vendored crates retain their respective upstream notices and license files.
+
+Dante is an Audinate product name. This is an unofficial implementation and is
+not authorized, certified, or endorsed by Audinate. No general interoperability,
+real-time performance, patent clearance, or production-readiness claim is made.
+See upstream's license and distribution disclaimer before distributing binaries.

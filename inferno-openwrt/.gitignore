@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+/dist/
+# Keep sources.lock.json and packages/*/source.mk under version control after preparation.
