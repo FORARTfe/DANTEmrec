@@ -1,0 +1,59 @@
+test_capture_exit_is_reported (test_fork.LifecycleTests.test_capture_exit_is_reported) ... ok
+test_conflicting_original_service_latches (test_fork.LifecycleTests.test_conflicting_original_service_latches) ... ok
+test_graceful_stop_and_metadata (test_fork.LifecycleTests.test_graceful_stop_and_metadata) ... ok
+test_low_space_latches_error (test_fork.LifecycleTests.test_low_space_latches_error) ... ok
+test_restarts_use_unique_files (test_fork.LifecycleTests.test_restarts_use_unique_files) ... ok
+test_stall_is_not_reported_as_recording (test_fork.LifecycleTests.test_stall_is_not_reported_as_recording) ... ok
+test_unmount_failure_visible (test_fork.LifecycleTests.test_unmount_failure_visible) ... ok
+test_waits_without_disk_and_starts_on_arrival (test_fork.LifecycleTests.test_waits_without_disk_and_starts_on_arrival) ... ok
+test_all_shell_syntax (test_fork.PayloadTests.test_all_shell_syntax) ... ok
+test_extraction_rejects_root (test_fork.PayloadTests.test_extraction_rejects_root) ... ok
+test_frontend_mock_contract (test_fork.PayloadTests.test_frontend_mock_contract) ... ok
+test_installer_refuses_non_openwrt (test_fork.PayloadTests.test_installer_refuses_non_openwrt) ... ok
+test_installer_roundtrip_and_modes (test_fork.PayloadTests.test_installer_roundtrip_and_modes) ... ok
+test_json_and_acl_contract (test_fork.PayloadTests.test_json_and_acl_contract) ... ok
+test_no_original_paths_or_cgi_in_payload (test_fork.PayloadTests.test_no_original_paths_or_cgi_in_payload) ... ok
+test_original_installer_checksum (test_fork.PayloadTests.test_original_installer_checksum) ... ok
+test_reinstall_preserves_config (test_fork.PayloadTests.test_reinstall_preserves_config) ... ok
+test_rpc_method_allowlist (test_fork.PayloadTests.test_rpc_method_allowlist) ... ok
+test_clock_alone_does_not_imply_recording (test_fork.StatusTests.test_clock_alone_does_not_imply_recording) ... ok
+test_enabled_but_missing_process_reported (test_fork.StatusTests.test_enabled_but_missing_process_reported) ... ok
+test_latched_error_not_replaced_by_stale_notice (test_fork.StatusTests.test_latched_error_not_replaced_by_stale_notice) ... ok
+test_no_invented_ptp_lock (test_fork.StatusTests.test_no_invented_ptp_lock) ... ok
+test_stale_growth_is_not_recording (test_fork.StatusTests.test_stale_growth_is_not_recording) ... ok
+test_active_original_service_conflicts (test_fork.ValidationTests.test_active_original_service_conflicts) ... ok
+test_channel_boundaries (test_fork.ValidationTests.test_channel_boundaries) ... ok
+test_defaults_valid (test_fork.ValidationTests.test_defaults_valid) ... ok
+test_missing_output_size_zero (test_fork.ValidationTests.test_missing_output_size_zero) ... ok
+test_pool_limit (test_fork.ValidationTests.test_pool_limit) ... ok
+test_rate_allowlist (test_fork.ValidationTests.test_rate_allowlist) ... ok
+test_rate_polling_reserve (test_fork.ValidationTests.test_rate_polling_reserve) ... ok
+test_stopped_original_service_allows (test_fork.ValidationTests.test_stopped_original_service_allows) ... ok
+test_storage_parser_ignores_labels_and_deduplicates (test_fork.ValidationTests.test_storage_parser_ignores_labels_and_deduplicates) ... ok
+test_toml_and_command_injection_rejected (test_fork.ValidationTests.test_toml_and_command_injection_rejected) ... ok
+test_uint_overflow_and_leading_zero (test_fork.ValidationTests.test_uint_overflow_and_leading_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 24.124s
+
+OK
+The preceding checks use host-side mocks, not OpenWrt, real storage, clock synchronization or Dante audio.
+test_archive_is_stable_and_keeps_submodule_sources (test_port.ArchiveTests.test_archive_is_stable_and_keeps_submodule_sources) ... ok
+test_recipes_pass_expected_cross_build_arguments_to_mock_cargo (test_port.BuildRecipeTests.test_recipes_pass_expected_cross_build_arguments_to_mock_cargo) ... ok
+test_all_service_scripts_parse_as_busybox_ash (test_port.ShellTests.test_all_service_scripts_parse_as_busybox_ash) ... ok
+test_defaults_disabled_and_clock_non_system (test_port.ShellTests.test_defaults_disabled_and_clock_non_system) ... ok
+test_disabled_services_do_not_touch_runtime (test_port.ShellTests.test_disabled_services_do_not_touch_runtime) ... ok
+test_names_and_toml_injection_rejected (test_port.ShellTests.test_names_and_toml_injection_rejected) ... ok
+test_numeric_limits (test_port.ShellTests.test_numeric_limits) ... ok
+test_both_owned_rx_buffers_patched (test_port.SourceTransformTests.test_both_owned_rx_buffers_patched) ... ok
+test_dependency_pins_preserved (test_port.SourceTransformTests.test_dependency_pins_preserved) ... ok
+test_patch_reproduces_transformation (test_port.SourceTransformTests.test_patch_reproduces_transformation) ... ok
+test_second_application_rejected (test_port.SourceTransformTests.test_second_application_rejected) ... ok
+test_upstream_api_drift_rejected (test_port.SourceTransformTests.test_upstream_api_drift_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 2.159s
+
+OK
+SKIPPED: Rust unit tests (rustc not installed).
+This check does not compile an OpenWrt package or test a Dante network.
