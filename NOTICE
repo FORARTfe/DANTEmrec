@@ -1,0 +1,14 @@
+ALSAmrec Dante fork 0.1.0 -- experimental source integration.
+
+The user-supplied installer is retained byte-for-byte in reference/installer-alsa-v3.1.sh.
+Its notices identify J. Bruce Fields (original recorder, 2024) and FORART
+(LuCI/CGI and OpenWrt work, 2025-26), under GPL v3. Those notices are retained.
+The new integration files are licensed GPL-3.0-only, without warranty.
+
+inferno-openwrt/ is the previously generated source kit, copied unchanged.
+It carries its own LICENSE, NOTICE and source-attribution documentation.
+Inferno, Statime, vendored dependencies and any optional AES67/RAVENNA components
+retain their respective upstream licenses. AES67/RAVENNA sources are not bundled.
+
+Dante is an Audinate technology. This unofficial integration is not sponsored,
+endorsed, certified or represented as interoperable on untested hardware.
