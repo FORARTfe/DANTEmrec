@@ -1,0 +1,8 @@
+#!/bin/sh
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Group-write is needed for the unprivileged client's Unix datagram socket access.
+umask 007
+export TOKIO_WORKER_THREADS=1
+# procd runs a single instance and stops the old process before restarting it.
+rm -f /var/run/inferno-clock/clock.sock || exit 1
+exec /usr/sbin/inferno-statime "$@"
