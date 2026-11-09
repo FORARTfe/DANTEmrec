@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Merge into /etc/asound.conf; do not overwrite an existing configuration.
+# Edit BIND_IP to the IPv4-bearing device in the isolated audio network.
+# An ALSA endpoint exists only while an application has it open.
+pcm.inferno {
+    type inferno
+    NAME "Inferno-OpenWrt-ALSA"
+    BIND_IP "br-audio"
+    SAMPLE_RATE "48000"
+    RX_CHANNELS "2"
+    TX_CHANNELS "2"
+    RX_LATENCY_NS "10000000"
+    TX_LATENCY_NS "10000000"
+    CLOCK_PATH "/var/run/inferno-clock/clock.sock"
+    PROCESS_ID "1"
+    ALT_PORT "4460"
+    hint {
+        show on
+        description "Unofficial Inferno Dante-compatible PCM"
+    }
+}
