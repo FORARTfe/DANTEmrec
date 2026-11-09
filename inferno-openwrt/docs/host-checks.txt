@@ -1,0 +1,19 @@
+test_archive_is_stable_and_keeps_submodule_sources (test_port.ArchiveTests.test_archive_is_stable_and_keeps_submodule_sources) ... ok
+test_recipes_pass_expected_cross_build_arguments_to_mock_cargo (test_port.BuildRecipeTests.test_recipes_pass_expected_cross_build_arguments_to_mock_cargo) ... ok
+test_all_service_scripts_parse_as_busybox_ash (test_port.ShellTests.test_all_service_scripts_parse_as_busybox_ash) ... ok
+test_defaults_disabled_and_clock_non_system (test_port.ShellTests.test_defaults_disabled_and_clock_non_system) ... ok
+test_disabled_services_do_not_touch_runtime (test_port.ShellTests.test_disabled_services_do_not_touch_runtime) ... ok
+test_names_and_toml_injection_rejected (test_port.ShellTests.test_names_and_toml_injection_rejected) ... ok
+test_numeric_limits (test_port.ShellTests.test_numeric_limits) ... ok
+test_both_owned_rx_buffers_patched (test_port.SourceTransformTests.test_both_owned_rx_buffers_patched) ... ok
+test_dependency_pins_preserved (test_port.SourceTransformTests.test_dependency_pins_preserved) ... ok
+test_patch_reproduces_transformation (test_port.SourceTransformTests.test_patch_reproduces_transformation) ... ok
+test_second_application_rejected (test_port.SourceTransformTests.test_second_application_rejected) ... ok
+test_upstream_api_drift_rejected (test_port.SourceTransformTests.test_upstream_api_drift_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.852s
+
+OK
+SKIPPED: Rust unit tests (rustc not installed).
+This check does not compile an OpenWrt package or test a Dante network.
